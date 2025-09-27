@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let newMode = document.body.classList.contains('light-mode') ? 'dark' : 'light';
         document.body.classList.toggle('dark-mode', newMode === 'dark');
         document.body.classList.toggle('light-mode', newMode === 'light');
-        localStorage.setItem('mode', newMode + '-mode');
+        localStorage.setItem('mode', newMode);
         // Update currentMode to reflect the new mode
         currentMode = newMode;
     });
