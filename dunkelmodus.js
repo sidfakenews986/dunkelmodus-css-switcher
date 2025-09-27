@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleButton.addEventListener('click', function() {
         let newMode = document.body.classList.contains('light-mode') ? 'dark' : 'light';
-        document.body.classList.toggle('dark-mode');
-        document.body.classList.toggle('light-mode');
+        document.body.classList.toggle('dark-mode', newMode === 'dark');
+        document.body.classList.toggle('light-mode', newMode === 'light');
         localStorage.setItem('mode', newMode + '-mode');
         // Update currentMode to reflect the new mode
         currentMode = newMode;
