@@ -29,5 +29,5 @@ body.light-mode button:hover {
 }
 
 body.dark-mode button:hover {
-    background-color: #444444; /* Updated for better contrast */
+    background-color: #555555; /* Updated for better contrast */
 }
