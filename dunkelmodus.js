@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let newMode = document.body.classList.contains('light-mode') ? 'dark' : 'light';
         document.body.classList.toggle('dark-mode');
         document.body.classList.toggle('light-mode');
-        localStorage.setItem('mode', newMode);
+        localStorage.setItem('mode', newMode + '-mode');
     });
 });
