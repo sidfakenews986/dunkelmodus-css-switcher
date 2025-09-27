@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update currentMode to reflect the new mode
         currentMode = newMode;
         // Also update the button text to reflect current mode
-        toggleButton.textContent = currentMode.charAt(0).toUpperCase() + currentMode.slice(1) + ' Mode';
+        toggleButton.textContent = newMode.charAt(0).toUpperCase() + newMode.slice(1) + ' Mode';
     });
 });
