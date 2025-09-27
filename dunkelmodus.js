@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('mode-toggle');
-    const currentMode = localStorage.getItem('mode') || 'light';
+    let currentMode = localStorage.getItem('mode') || 'light';
     document.body.classList.add(currentMode + '-mode');
 
     toggleButton.addEventListener('click', function() {
