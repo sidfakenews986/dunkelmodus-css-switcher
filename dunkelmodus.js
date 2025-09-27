@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('mode', newMode);
         // Update currentMode to reflect the new mode
         currentMode = newMode;
-        // Also update the button text to reflect current mode
+        // Update button text to reflect the new mode
         toggleButton.textContent = newMode.charAt(0).toUpperCase() + newMode.slice(1) + ' Mode';
     });
 });
