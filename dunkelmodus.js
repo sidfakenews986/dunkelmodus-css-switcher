@@ -8,5 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.toggle('dark-mode');
         document.body.classList.toggle('light-mode');
         localStorage.setItem('mode', newMode + '-mode');
+        // Update currentMode to reflect the new mode
+        currentMode = newMode;
     });
 });
